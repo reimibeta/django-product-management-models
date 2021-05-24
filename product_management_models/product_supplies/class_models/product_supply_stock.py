@@ -3,12 +3,12 @@ from django.db import models
 from django.db.models.signals import pre_save, post_delete, post_save, pre_delete
 from django.dispatch import receiver
 
-from wallet_models.wallet_models.wallet import Wallet
+# from wallet_models.wallet_models.wallet import Wallet
 
-from pcr_models.products.product_classes.product_stock_management import product_stock_supply
-from pcr_models.products.product_classes.product_account_management import product_account_outlet
-from pcr_models.products.product_stocks.models import ProductStock
-from pcr_models.products.product_supplies.product_supply_models.product_supply import ProductSupply
+from product_management_models.products.product_classes.product_stock_management import product_stock_supply
+from product_management_models.product_classes.product_account_management import product_account_outlet
+from product_management_models.products.product_stocks.models import ProductStock
+from product_management_models.products.product_supplies.product_supply_models.product_supply import ProductSupply
 
 
 class ProductSupplyStock(models.Model):

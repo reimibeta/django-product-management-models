@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
 
-from product_models.product_supplies.class_models.product_supply_deliveries import ProductSupplyDelivery
+from product_management_models.product_supplies.class_models.product_supply_deliveries import ProductSupplyDelivery
 
 
 class ProductSupplyDeliveryAdmin(admin.ModelAdmin):

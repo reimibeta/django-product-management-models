@@ -12,8 +12,9 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_utils.pagination import StandardResultsSetPagination
 
-from product_models.product_supplies.class_models.product_supply import ProductSupply
-from product_models.product_supplies.class_serializiers.product_supply_serializers import ProductSupplySerializer
+from product_management_models.product_supplies.class_models.product_supply import ProductSupply
+from product_management_models.product_supplies.class_serializiers.product_supply_serializers import \
+    ProductSupplySerializer
 
 
 class ProductSupplyViewSet(viewsets.ModelViewSet):
