@@ -1,2 +1,2 @@
-from product_models.product_classes.product_stock.product_stock_outlet import product_stock_outlet
-from product_models.product_classes.product_stock.product_stock_supply import product_stock_supply
+from product_management_models.class_projects.product_stock.product_stock_outlet import product_stock_outlet
+from product_management_models.class_projects.product_stock.product_stock_supply import product_stock_supply

@@ -1,8 +1,8 @@
+from product_models.class_serializers.product_serializers import ProductSerializer
 from rest_flex_fields import FlexFieldsModelSerializer
 from rest_framework import serializers
 
-from pcr_models.products.product_stocks.models import ProductStock
-from pcr_models.products.products.product_serializers.product_serializers import ProductSerializer
+from product_management_models.product_stocks.models import ProductStock
 
 
 class ProductStockSerializer(FlexFieldsModelSerializer):

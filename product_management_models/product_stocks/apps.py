@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ProductStocksConfig(AppConfig):
-    name = 'pcr_models.products.product_stocks'
+class ProductStockConfig(AppConfig):
+    name = 'product_management_models.product_stocks'
     verbose_name = 'Product Stocks'

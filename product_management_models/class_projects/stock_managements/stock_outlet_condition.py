@@ -1,5 +1,5 @@
-from product_models.product_classes.objects.object_base import SetObjectPk, SetObjectCondition
-from product_models.product_classes.stock_managements.stock_outlet import StockOutlet
+from product_management_models.class_projects.objects.object_base import SetObjectPk, SetObjectCondition
+from product_management_models.class_projects.stock_managements.stock_outlet import StockOutlet
 
 
 class StockOutletCondition(SetObjectPk, SetObjectCondition):

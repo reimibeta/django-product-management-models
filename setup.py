@@ -24,7 +24,8 @@ setuptools.setup(
         'rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git',
         'product-models @ git+https://github.com/reimibeta/django-product-models.git',
         'pillow==8.2.0',
-        'django-cleanup==5.2.0'
+        'django-cleanup==5.2.0',
+        'supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git',
     ]
     # scripts=['makemigrations.py','migrate.py']
 )

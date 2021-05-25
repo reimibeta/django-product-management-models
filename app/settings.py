@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # django rest-framework
     'rest_framework',
-    # product supply
-    'product_management_models.product_supplies.apps.ProductConfig',
+    # product
+    'product_models.apps.ProductConfig',
+    'product_management_models.product_stocks.apps.ProductStockConfig',
+    # 'product_management_models.product_supplies.apps.ProductConfig',
+    # Filter
+    'django_admin_listfilter_dropdown',
 ]
 
 MIDDLEWARE = [

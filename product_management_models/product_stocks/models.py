@@ -1,6 +1,5 @@
 from django.db import models
-
-from pcr_models.products.products.product_models.product import Product
+from product_models.class_models.product import Product
 
 
 class ProductStock(models.Model):

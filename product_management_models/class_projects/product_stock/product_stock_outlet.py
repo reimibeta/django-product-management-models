@@ -1,5 +1,5 @@
-from product_models.product_classes.stock_managements.stock_outlet_condition import StockOutletCondition
-from product_models.product_stocks.models import ProductStock
+from product_management_models.class_projects.stock_managements.stock_outlet_condition import StockOutletCondition
+from product_management_models.product_stocks.models import ProductStock
 
 
 class ProductStockOutlet:

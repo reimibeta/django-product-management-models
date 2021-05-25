@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
 from image_utils.renders.render_image import render_image
+from product_models.class_models.product import Product
+from product_models.class_models.product_image import ProductImage
 
-from pcr_models.products.product_stocks.models import ProductStock
-from pcr_models.products.products.product_models.product import Product
-from pcr_models.products.products.product_models.product_image import ProductImage
+from product_management_models.product_stocks.models import ProductStock
 
 
 class ProductStockAdmin(admin.ModelAdmin):
