@@ -1,5 +1,6 @@
 from datetime_utils.date_time import DateTime
 from django.db import models
+from supplier_models.suppliers.models import Supplier
 
 
 class ProductSupply(models.Model):

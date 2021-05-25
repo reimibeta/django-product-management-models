@@ -7,13 +7,11 @@ from django.db import models
 # delivery choice
 from django.db.models.signals import pre_save, post_save, pre_delete
 from django.dispatch import receiver
+from staff_models.staff_groups.class_models.staff_deliver import StaffDeliver
+from wallet_models.class_models.wallet import Wallet
+from wallet_models.class_projects.balances.outlets.balance_outlet_condition import balance_outlet_condition
 
-from wallet_models.wallet_models.wallet import Wallet
-
-from pcr_models.classes.balances.outlets.balance_outlet import BalanceOutlet
-from pcr_models.products.product_supplies.product_supply_models.product_supply import ProductSupply
-from pcr_models.staffs.staff_groups.staff_group_models.staff_deliver import StaffDeliver
-from pcr_models.classes.balances.outlets.balance_outlet_condition import balance_outlet_condition
+from product_management_models.product_supplies.class_models.product_supply import ProductSupply
 
 
 class DeliveryStatusChoice(Enum):

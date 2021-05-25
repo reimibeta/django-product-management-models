@@ -20,6 +20,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/product-stocks/', include('product_management_models.product_stocks.urls')),
-    # path('api/product-supplies/', include('product_management_models.product_supplies.urls')),
-]
+    path('api/product-stocks/', include('product_management_models.product_stocks.urls')),
+    path('api/product-supplies/', include('product_management_models.product_supplies.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,10 +1,10 @@
 from rest_flex_fields import FlexFieldsModelSerializer
 from rest_framework import serializers
+from staff_models.staffs.class_serializers.staff_serializers import StaffSerializer
+from supplier_models.suppliers.supplier_serializers.supplier_serializers import SupplierSerializer
 
-from pcr_models.products.product_stocks.serializers import ProductStockSerializer
-from pcr_models.products.product_supplies.product_supply_models.product_supply import ProductSupply
-from pcr_models.staffs.staffs.staff_serializers.staff_serializers import StaffSerializer
-from pcr_models.suppliers.suppliers.supplier_serializers.supplier_serializers import SupplierSerializer
+from product_management_models.product_stocks.serializers import ProductStockSerializer
+from product_management_models.product_supplies.class_models.product_supply import ProductSupply
 
 
 class ProductSupplySerializer(FlexFieldsModelSerializer):

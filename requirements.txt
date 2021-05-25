@@ -12,3 +12,5 @@ image-utils @ git+https://github.com/reimibeta/django-image-utils.git
 stock-algorithms @ git+https://github.com/reimibeta/django-stock-utils.git
 product-models @ git+https://github.com/reimibeta/django-product-models.git
 supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git
+wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git
+staff-models @ git+https://github.com/reimibeta/django-staff-models.git
