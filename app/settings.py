@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'product_models.apps.ProductConfig',
     'product_management_models.product_stocks.apps.ProductStockConfig',
     'product_management_models.product_supplies.apps.ProductSupplyConfig',
+    # Clean-Up
+    'django_cleanup.apps.CleanupConfig',  # should go after your apps
     # Filter
     'django_admin_listfilter_dropdown',
 ]
