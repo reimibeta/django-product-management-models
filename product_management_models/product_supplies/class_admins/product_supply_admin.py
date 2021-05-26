@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
+from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter, ChoiceDropdownFilter
 from html_render_utils.html_render import HtmlRender
 
 from product_management_models.product_supplies.class_admins.product_supply_delivery_admin import \
@@ -16,6 +16,7 @@ class ProductSupplyAdmin(admin.ModelAdmin):
         'note',
         'products',
         'supplier',
+        'condition',
         'request_date',
         'supply_date',
     )
@@ -49,7 +50,7 @@ class ProductSupplyAdmin(admin.ModelAdmin):
         ('product_supply_stock__is_transferred', DropdownFilter),
         # for choice fields
         ('product_supply_stock__stock__product__name', DropdownFilter),
-        # ('a_choicefield', ChoiceDropdownFilter),
+        ('condition', ChoiceDropdownFilter),
         # for related fields
         ('supplier', RelatedDropdownFilter),
     )
