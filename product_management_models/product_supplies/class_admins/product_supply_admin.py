@@ -15,12 +15,13 @@ class ProductSupplyAdmin(admin.ModelAdmin):
         'id',
         'note',
         'products',
-        'supplier',
-        'condition',
+        # 'supplier',
+        # 'condition',
         'request_date',
+        'require_date',
         'supply_date',
     )
-    list_display_links = ['note', 'supplier', 'products', ]
+    list_display_links = ['note', 'products', ]
     # list_editable = []
     list_per_page = 25
 
@@ -34,9 +35,12 @@ class ProductSupplyAdmin(admin.ModelAdmin):
                 i = i + 1
                 transfer = "transferred" if stock.is_transferred else "not transfer"
                 paid = "paid" if stock.is_paid else "not paid"
-                arr.append("{}-{}({})({})({})".format(
+                condition = stock.condition.lower() if stock.condition else "not provide"
+                # print(stock.condition.lower())
+                arr.append("{}-{}({})({})({})({})".format(
                     i, stock.stock,
                     stock.quantity,
+                    condition,
                     transfer,
                     paid
                 ))
@@ -45,14 +49,15 @@ class ProductSupplyAdmin(admin.ModelAdmin):
     list_filter = (
         # for ordinary fields
         ('request_date', DropdownFilter),
+        ('require_date', DropdownFilter),
         ('supply_date', DropdownFilter),
         ('product_supply_stock__is_paid', DropdownFilter),
         ('product_supply_stock__is_transferred', DropdownFilter),
         # for choice fields
         ('product_supply_stock__stock__product__name', DropdownFilter),
-        ('condition', ChoiceDropdownFilter),
+        # ('condition', ChoiceDropdownFilter),
         # for related fields
-        ('supplier', RelatedDropdownFilter),
+        ('product_supply_stock__supplier', RelatedDropdownFilter),
     )
     # ordering = ['-supply_date']
     inlines = [

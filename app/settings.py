@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     # django rest-framework
     'rest_framework',
     # supplier
-    'supplier_models.suppliers.apps.SupplierConfig',
+    'supplier_models.apps.SupplierConfig',
     # staff
     'staff_models.staffs.apps.StaffConfig',
     'staff_models.staff_groups.apps.StaffGroupConfig',

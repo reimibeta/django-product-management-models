@@ -2,6 +2,7 @@ from django.db import models
 from product_models.class_models.product import Product
 
 
+# product stocks
 class ProductStock(models.Model):
     product = models.OneToOneField(
         Product,

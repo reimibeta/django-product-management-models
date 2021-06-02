@@ -1,13 +1,28 @@
 from decimal import Decimal
+from enum import Enum
+
 from django.db import models
 from django.db.models.signals import pre_save, post_delete, post_save, pre_delete
 from django.dispatch import receiver
+
+from supplier_models.models import Supplier
 from wallet_models.class_models.wallet import Wallet
 
-from product_management_models.class_projects.product_accounts.product_account_outlet import product_account_outlet
-from product_management_models.class_projects.product_stock.product_stock_supply import product_stock_supply
+from product_management_models.class_projects.product_accounts.product_account_outlet import \
+    product_account_outlet
+from product_management_models.class_projects.product_stock.product_stock_supply import \
+    product_stock_supply
 from product_management_models.product_stocks.models import ProductStock
 from product_management_models.product_supplies.class_models.product_supply import ProductSupply
+
+
+class ConditionChoice(Enum):
+    BUILD = "build"
+    SUPPLY = "supply"
+
+    @classmethod
+    def choices(cls):
+        return tuple((i.name, i.value) for i in cls)
 
 
 class ProductSupplyStock(models.Model):
@@ -21,12 +36,20 @@ class ProductSupplyStock(models.Model):
         null=True,
         related_name='product_supply_stock'
     )
+    # order = models.ForeignKey(
+    #     Order,
+    #     on_delete=models.CASCADE,
+    #     related_name='order_supply_stock',
+    #     blank=True, null=True
+    # )
+    supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE, blank=True, null=True)
     stock = models.ForeignKey(
         ProductStock,
         on_delete=models.CASCADE,
         blank=True,
         null=True
     )
+
     quantity = models.IntegerField(default=0)
     price_per_unit = models.DecimalField(
         max_digits=20,
@@ -35,6 +58,12 @@ class ProductSupplyStock(models.Model):
     )
     is_transferred = models.BooleanField(default=False)
     is_paid = models.BooleanField(default=True)
+    condition = models.CharField(
+        choices=ConditionChoice.choices(),
+        blank=True,
+        null=True,
+        max_length=120
+    )
 
     class Meta:
         verbose_name = 'Product supply stocks'

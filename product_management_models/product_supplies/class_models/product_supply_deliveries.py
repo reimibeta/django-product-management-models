@@ -83,8 +83,9 @@ class ProductSupplyDelivery(models.Model):
 def add(sender, instance, created, **kwargs):
     if created:
         # account
+        print(instance.account.id)
         balance_outlet_condition.set_current_condition((instance.payment_status == PaymentStatusChoice.PAID.name))
-        balance_outlet_condition.current_pk(instance.account.id)
+        balance_outlet_condition.set_current_pk(instance.account.id)
         balance_outlet_condition.outlet_account(instance.cost_delivery)
 
 
@@ -96,9 +97,9 @@ def update(sender, instance, **kwargs):
         old_value = ProductSupplyDelivery.objects.get(id=instance.id)
         # account
         balance_outlet_condition.set_current_condition((instance.payment_status == PaymentStatusChoice.PAID.name))
-        balance_outlet_condition.current_pk(instance.account.id)
+        balance_outlet_condition.set_current_pk(instance.account.id)
         balance_outlet_condition.set_last_condition((old_value.payment_status == PaymentStatusChoice.PAID.name))
-        balance_outlet_condition.last_pk(old_value.account.id)
+        balance_outlet_condition.set_last_pk(old_value.account.id)
         balance_outlet_condition.update_outlet_account(instance.cost_delivery, old_value.cost_delivery)
 
 
