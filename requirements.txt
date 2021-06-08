@@ -8,9 +8,11 @@ drf-flex-fields==0.9.0
 html-render-utils @ git+https://github.com/reimibeta/django-html-render-utils.git@9235f40df07a1d63f2573837718db4ef31efe7eb
 image-utils @ git+https://github.com/reimibeta/django-image-utils.git@145c80c2a8de0ac59c648671e3242578b6efbc7d
 Pillow==8.2.0
-product-models @ git+https://github.com/reimibeta/django-product-models.git@a36b7e35037024670be725e055c3b007e2235cc9
+product-models @ git+https://github.com/reimibeta/django-product-models.git@658aa2675f1378a204c9170a8000fb798598ea41
 rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git@b7ec67b0138d1a8277f3418edadc5451aa7a41c4
 staff-models @ git+https://github.com/reimibeta/django-staff-models.git@4a245b6b9804dd897e98ca3af748ee7f8aae294d
 stock-algorithms @ git+https://github.com/reimibeta/django-stock-utils.git@af1291decd5f2e2e0387a57186dff2335b026836
 supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git@40b6bf354baeae7608bd6689585c68ef6f4f6d66
-wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git@bff0385071659f121f3d7ce5be48bfa93af4a4c4
+wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git@163fb4242df2006c38695491f10ed354bb92a29c
+user-models @ git+https://github.com/reimibeta/django-user-models.git@698e72392cdc469cf33f5e47781ea995af89ab3c
+

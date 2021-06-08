@@ -9,7 +9,7 @@ from django.db.models.signals import pre_save, post_save, pre_delete
 from django.dispatch import receiver
 from staff_models.staff_groups.class_models.staff_deliver import StaffDeliver
 from wallet_models.class_models.wallet import Wallet
-from wallet_models.class_projects.balances.outlets.balance_outlet_condition import balance_outlet_condition
+from wallet_models.class_apps.balances.outlets.balance_outlet_condition import balance_outlet_condition
 
 from product_management_models.product_supplies.class_models.product_supply import ProductSupply
 

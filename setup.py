@@ -14,7 +14,7 @@ setuptools.setup(
     version='1.0.7',
     packages=setuptools.find_packages(),
     install_requires=[
-        'product-models @ git+https://github.com/reimibeta/django-product-models.git@a36b7e35037024670be725e055c3b007e2235cc9',
+        'product-models @ git+https://github.com/reimibeta/django-product-models.git@658aa2675f1378a204c9170a8000fb798598ea41',
         'supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git@40b6bf354baeae7608bd6689585c68ef6f4f6d66',
     ]
 )

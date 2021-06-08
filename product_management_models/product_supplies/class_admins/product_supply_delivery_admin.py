@@ -15,7 +15,7 @@ class ProductSupplyDeliveryAdmin(admin.ModelAdmin):
         'delivery_date',
         'arrived_date',
     )
-    ist_display_links = ['deliver', ]
+    list_display_links = ['deliver', 'account']
     list_per_page = 25
     list_filter = (
         # for ordinary fields

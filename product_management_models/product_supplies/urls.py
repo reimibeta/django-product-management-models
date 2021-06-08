@@ -6,6 +6,8 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 """ Product supply api """
 router.register('product-supply', views.ProductSupplyViewSet)
+router.register('product-supply-stock', views.ProductSupplyStockViewSet)
+router.register('product-supply-delivery', views.ProductSupplyDeliveryViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # django rest-framework
     'rest_framework',
+    # user
+    'user_models.apps.UserConfig',
     # supplier
     'supplier_models.apps.SupplierConfig',
     # staff
@@ -145,3 +147,5 @@ except ImportError:
 
 # handle upload with permission
 FILE_UPLOAD_PERMISSIONS = 0o644
+# AUTH
+AUTH_USER_MODEL = 'user_models.User'

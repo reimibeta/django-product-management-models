@@ -22,4 +22,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/product-stocks/', include('product_management_models.product_stocks.urls')),
     path('api/product-supplies/', include('product_management_models.product_supplies.urls')),
+    # supplier package module
+    path('api/suppliers/', include('supplier_models.urls')),
+    # product package module
+    path('api/products/', include('product_models.urls')),
+    # wallet package module
+    path('api/wallets/', include('wallet_models.urls')),
+    # user package module
+    path('api/users/', include('user_models.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
