@@ -4,6 +4,7 @@ from rest_framework import serializers
 from product_management_models.product_supplies.class_models.product_supply import ProductSupply
 from product_management_models.product_supplies.class_models.product_supply_deliveries import ProductSupplyDelivery
 from wallet_models.serializers import WalletSerializer
+from staff_models.staff_groups.class_serializers.staff_deliver_serializers import StaffDeliverSerializer
 
 
 class ProductSupplyDeliverySerializer(FlexFieldsModelSerializer):
@@ -11,7 +12,7 @@ class ProductSupplyDeliverySerializer(FlexFieldsModelSerializer):
     account = serializers.PrimaryKeyRelatedField(read_only=True)
     # order_build_workers = serializers.PrimaryKeyRelatedField(read_only=True, many=True)
     # supplier = serializers.PrimaryKeyRelatedField(read_only=True)
-    # stock = serializers.PrimaryKeyRelatedField(read_only=True)
+    deliver = serializers.PrimaryKeyRelatedField(read_only=True)
     delivery_cost = serializers.SerializerMethodField('delivery_cost_define')
 
     def delivery_cost_define(self, obj):
@@ -40,6 +41,7 @@ class ProductSupplyDeliverySerializer(FlexFieldsModelSerializer):
         ]
         expandable_fields = {
             'account': WalletSerializer,
+            'deliver': StaffDeliverSerializer,
             # 'stock': ProductStockSerializer,
             # 'supplier': SupplierSerializer,
             # 'product_build_worker': (ProductBuildWorkerSerializer, {'many': True}),

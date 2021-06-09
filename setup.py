@@ -11,7 +11,7 @@ import setuptools
 
 setuptools.setup(
     name='product_management_models',
-    version='1.0.7',
+    version='1.0.8',
     packages=setuptools.find_packages(),
     install_requires=[
         'product-models @ git+https://github.com/reimibeta/django-product-models.git@658aa2675f1378a204c9170a8000fb798598ea41',

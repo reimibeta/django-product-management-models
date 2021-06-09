@@ -30,4 +30,7 @@ urlpatterns = [
     path('api/wallets/', include('wallet_models.urls')),
     # user package module
     path('api/users/', include('user_models.urls')),
+    # staff
+    path('api/staffs/', include('staff_models.staffs.urls')),
+    path('api/staff-groups/', include('staff_models.staff_groups.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
