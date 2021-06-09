@@ -10,7 +10,7 @@ image-utils @ git+https://github.com/reimibeta/django-image-utils.git@145c80c2a8
 Pillow==8.2.0
 product-models @ git+https://github.com/reimibeta/django-product-models.git@658aa2675f1378a204c9170a8000fb798598ea41
 rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git@b7ec67b0138d1a8277f3418edadc5451aa7a41c4
-staff-models @ git+https://github.com/reimibeta/django-staff-models.git@4a245b6b9804dd897e98ca3af748ee7f8aae294d
+staff-models @ git+https://github.com/reimibeta/django-staff-models.git@993fd6e1a081f077a7f37ae2a7ad263b3db14d18
 stock-algorithms @ git+https://github.com/reimibeta/django-stock-utils.git@af1291decd5f2e2e0387a57186dff2335b026836
 supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git@40b6bf354baeae7608bd6689585c68ef6f4f6d66
 wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git@163fb4242df2006c38695491f10ed354bb92a29c
