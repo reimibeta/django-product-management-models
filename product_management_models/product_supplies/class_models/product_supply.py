@@ -17,7 +17,7 @@ from supplier_models.models import Supplier
 class ProductSupply(models.Model):
     note = models.TextField(blank=True, null=True)
     # supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE, blank=True, null=True)
-    request_date = models.DateField(default=DateTime.datenow)
+    request_date = models.DateField(default=DateTime('date').now())
     require_date = models.DateField(blank=True, null=True)
     supply_date = models.DateField(blank=True, null=True)
     # condition = models.CharField(

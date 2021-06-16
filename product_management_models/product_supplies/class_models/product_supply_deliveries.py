@@ -52,7 +52,7 @@ class ProductSupplyDelivery(models.Model):
     deliver = models.ForeignKey(StaffDeliver, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
     cost_delivery = models.DecimalField(max_digits=20, decimal_places=2, default=Decimal(0.00))
-    delivery_date = models.DateTimeField(default=DateTime.datetimenow)
+    delivery_date = models.DateTimeField(default=DateTime('datetime').now())
     arrived_date = models.DateTimeField(null=True, blank=True)
     payment_status = models.CharField(
         choices=PaymentStatusChoice.choices(),

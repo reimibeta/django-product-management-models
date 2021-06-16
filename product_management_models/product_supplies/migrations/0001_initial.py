@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('note', models.TextField(blank=True, null=True)),
-                ('request_date', models.DateField(default=datetime_utils.date_time.DateTime.datenow)),
+                ('request_date', models.DateField(default=datetime_utils.date_time.DateTime('date').now())),
                 ('require_date', models.DateField(blank=True, null=True)),
                 ('supply_date', models.DateField(blank=True, null=True)),
             ],
@@ -57,7 +57,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('quantity', models.IntegerField(default=0)),
                 ('cost_delivery', models.DecimalField(decimal_places=2, default=Decimal('0'), max_digits=20)),
-                ('delivery_date', models.DateTimeField(default=datetime_utils.date_time.DateTime.datetimenow)),
+                ('delivery_date', models.DateTimeField(default=datetime_utils.date_time.DateTime('datetime').now())),
                 ('arrived_date', models.DateTimeField(blank=True, null=True)),
                 ('payment_status', models.CharField(blank=True, choices=[('OPTIONAL', 'optional'), ('EXPIRED', 'expired'), ('REFUND', 'refund'), ('FAILED', 'failed'), ('UNPAID', 'unpaid'), ('PAID', 'paid')], max_length=120, null=True)),
                 ('delivery_status', models.CharField(blank=True, choices=[('UNFULFILLED', 'unfulfilled'), ('DELIVERING', 'delivering'), ('RETURNING', 'returning'), ('ARRIVED', 'arrived'), ('COLLECTED', 'collected')], max_length=120, null=True)),
