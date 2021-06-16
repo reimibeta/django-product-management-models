@@ -11,10 +11,10 @@ import setuptools
 
 setuptools.setup(
     name='product_management_models',
-    version='1.0.9',
+    version='1.1.0',
     packages=setuptools.find_packages(),
-    install_requires=[
-        'product-models @ git+https://github.com/reimibeta/django-product-models.git@9f8eeb4f6991cc3b2f56579859bb0c6a2c16ad0e',
-        'supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git@40b6bf354baeae7608bd6689585c68ef6f4f6d66',
-    ]
+    # install_requires=[
+    #     'product-models @ git+https://github.com/reimibeta/django-product-models.git',
+    #     'supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git',
+    # ]
 )
