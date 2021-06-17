@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from rest_framework_utils.pagination import StandardResultsSetPagination
+from django_rest_framework.pagination import StandardResultsSetPagination
 
 from product_management_models.product_stocks.models import ProductStock
 from product_management_models.product_stocks.serializers import ProductStockSerializer

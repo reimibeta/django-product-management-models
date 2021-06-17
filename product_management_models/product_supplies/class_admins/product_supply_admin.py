@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter, ChoiceDropdownFilter
-from html_render_utils.html_render import HtmlRender
+from django_html_render.html_render import HtmlRender
 
 from product_management_models.product_supplies.class_admins.product_supply_delivery_admin import \
     ProductSupplyDeliveryAdminInline

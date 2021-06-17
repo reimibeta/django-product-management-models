@@ -1,7 +1,7 @@
 from decimal import Decimal
 from enum import Enum
 
-from datetime_utils.date_time import DateTime
+from django_datetime.datetime import datetime
 from django.db import models
 
 # delivery choice
@@ -52,7 +52,7 @@ class ProductSupplyDelivery(models.Model):
     deliver = models.ForeignKey(StaffDeliver, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0)
     cost_delivery = models.DecimalField(max_digits=20, decimal_places=2, default=Decimal(0.00))
-    delivery_date = models.DateTimeField(default=DateTime('datetime').now())
+    delivery_date = models.DateTimeField(default=datetime.dnow())
     arrived_date = models.DateTimeField(null=True, blank=True)
     payment_status = models.CharField(
         choices=PaymentStatusChoice.choices(),

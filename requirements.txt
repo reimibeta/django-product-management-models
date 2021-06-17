@@ -1,17 +1,17 @@
-datetime-utils @ git+https://github.com/reimibeta/django-datetime-utils.git
 Django==3.1.7
 django-admin-list-filter-dropdown==1.0.3
 django-cleanup==5.2.0
+django-datetime @ git+https://github.com/reimibeta/django-datetime.git@d296be9078c47baa763d0732b5cd56f1962bc50f
+django-html-render @ git+https://github.com/reimibeta/django-html-render.git@03de9608e80fd65bdbce4dbfa6dd7b5f555895a0
+django-image @ git+https://github.com/reimibeta/django-image.git@ddfe248768f935947e61f4b8be17deaf64b6a09d
+django-rest-framework @ git+https://github.com/reimibeta/django-rest-framework.git@503852d3fda3717b0de0932a216d27caa668e743
+django-stock @ git+https://github.com/reimibeta/django-stock.git@c545e0dd5e2f40462c70e19e58cad9db08e89dc8
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.0
 drf-flex-fields==0.9.0
-html-render-utils @ git+https://github.com/reimibeta/django-html-render-utils.git
-image-utils @ git+https://github.com/reimibeta/django-image-utils.git
 Pillow==8.2.0
-product-models @ git+https://github.com/reimibeta/django-product-models.git
-rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git
-staff-models @ git+https://github.com/reimibeta/django-staff-models.git
-stock-algorithms @ git+https://github.com/reimibeta/django-stock-utils.git
-supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git
-user-models @ git+https://github.com/reimibeta/django-user-models.git
-wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git
+product-models @ git+https://github.com/reimibeta/django-product-models.git@7ed1f16cd16359cc16ba5e21b8012b1754068850
+staff-models @ git+https://github.com/reimibeta/django-staff-models.git@db933a8acfd6311b80aa1c4cb1f49517b0fe7094
+supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git@16e1058a8d1bd6714089e6160202800eeb1b4fa4
+user-models @ git+https://github.com/reimibeta/django-user-models.git@08ab1b9b56125f629e130b229d49e591801c50df
+wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git@fd291825593a79dccddf9bc848ea3cb96d1e9544
