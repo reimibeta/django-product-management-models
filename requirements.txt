@@ -1,7 +1,7 @@
 Django==3.1.7
 django-admin-list-filter-dropdown==1.0.3
 django-cleanup==5.2.0
-django-datetime @ git+https://github.com/reimibeta/django-datetime.git@1c93aba8fdb7687dab1d0cc60c6f78c51b38ea3c
+django-datetime @ git+https://github.com/reimibeta/django-datetime.git@5728f452cfa0ed1259321f5b71953324e840d198
 django-html-render @ git+https://github.com/reimibeta/django-html-render.git@03de9608e80fd65bdbce4dbfa6dd7b5f555895a0
 django-image @ git+https://github.com/reimibeta/django-image.git@ddfe248768f935947e61f4b8be17deaf64b6a09d
 django-rest-framework @ git+https://github.com/reimibeta/django-rest-framework.git@503852d3fda3717b0de0932a216d27caa668e743
@@ -10,7 +10,7 @@ djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.0
 drf-flex-fields==0.9.0
 Pillow==8.2.0
-product-models @ git+https://github.com/reimibeta/django-product-models.git@589aa63a0dd80e7c849bd2c8ec60fd785b83a6f1
+product-models @ git+https://github.com/reimibeta/django-product-models.git@4b5dbb4f2c7aff5eedc21ca827b86c00b28ece35
 staff-models @ git+https://github.com/reimibeta/django-staff-models.git@086837e175964816ee5d83bc10d802aca491b282
 supplier-models @ git+https://github.com/reimibeta/django-supplier-models.git@bc03978605c7876533aca022bc3df3708ee32fb1
 user-models @ git+https://github.com/reimibeta/django-user-models.git@37fa3b274e692299d8aa54f4e4ba882f94924da6
